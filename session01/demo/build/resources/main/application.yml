@@ -1,0 +1,16 @@
+spring:
+    application:
+        name: demo
+    datasource:
+        password: 123456
+        url: jdbc:mysql://localhost:3306/first_spring _boot?createDatabaseIfNotExist=true
+        username: root
+    jooq:
+        sql-dialect: org.hibernate.dialect.MySQL8Dialect
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+          hibernate:
+              format_sql: true
+              show_sql: true
